@@ -1,0 +1,102 @@
+.poke-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .poke-card h2 {
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .imgPokemon {
+    width: 200px;
+    height: 200px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .poke-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .poke-card button:hover {
+    background-color: #0056b3;
+  }
+
+.listPokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .listPokemon .poke-card {
+    margin: 10px;
+}
+
+.imgPokemonList {
+    width: 70px;
+}
+
+.imgPokeball {
+  width: 30px;
+  height: 30px;
+}
+
+.imgPokeballEmpy {
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+
+}
+
+.pokeLi {
+  list-style: none;
+}
+
+/* Animacion match */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes happyAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.happy-animation {
+  animation: happyAnimation 1s;
+}
